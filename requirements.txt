@@ -1,0 +1,4 @@
+ragatouille
+fastapi
+uvicorn[standard]
+streamlit
