@@ -2,3 +2,4 @@ ragatouille
 fastapi
 uvicorn[standard]
 streamlit
+modal
