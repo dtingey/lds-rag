@@ -1,5 +1,7 @@
-ragatouille
-fastapi
-uvicorn[standard]
-streamlit
-modal
+requests
+litserve
+llama-index-core
+llama-index-llms-ollama
+llama-index-vector-stores-qdrant
+llama-index-embeddings-fastembed
+llama-index-readers-json

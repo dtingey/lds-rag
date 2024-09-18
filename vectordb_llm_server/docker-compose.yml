@@ -1,0 +1,24 @@
+services:
+  llm-server:
+    build: .
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama_data:/root/.ollama
+    environment:
+      - MODEL_NAME=${MODEL_NAME:-llama3.1}  # Set a default value
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  qdrant:
+      image: qdrant/qdrant
+      ports:
+        - "6333:6333"
+        - "6334:6334"
+      volumes:
+        - "./qdrant_storage:/qdrant/storage:z"
