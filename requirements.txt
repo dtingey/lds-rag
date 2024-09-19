@@ -5,3 +5,4 @@ llama-index-llms-ollama
 llama-index-vector-stores-qdrant
 llama-index-embeddings-fastembed
 llama-index-readers-json
+llama-index-postprocessor-colbert-rerank
