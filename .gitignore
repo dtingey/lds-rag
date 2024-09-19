@@ -164,3 +164,4 @@ cython_debug/
 client.py
 vectordb_llm_server/ollama_data/
 vectordb_llm_server/qdrant_storage/
+dev.ipynb
